@@ -130,5 +130,57 @@ accidentally modifying the original sequence.
 directors = ['tarantino', 'wes anderson', 'paul thomas anderson', 'wong kar wai', 'koreeda']
 western_directors = directors[:2]
 western_directors.remove('wes anderson')
-print(directors)
+print(western_directors)
+print("*" * 100)
+
+""" Slice Assigning """
+
+l = [1, 2, 3, 4, 5, 6]
+l[:3] = [11, 22, 33]
+print(l)
+
+m = [22, 33, 55, 66, 77]
+# m[::2] = [1, 2]
+print(m) 
+"""
+This will throw a ValueError. The sliced list will have three elements.
+We have assigned only two elements in the slice assignment.
+Hence causes the Value Error
+"""
+""" 
+Can we use slice assignments for Strings ?
+NO, Because Strings are Immutables.
+"""
+print("*-" * 150)
+""" PUZZLES """
+
+s = "All that glitters is not gold"
+print(s[9:-9])
+print(s[::10])
+print(len(s))
+default_start = 28  # 29 - 1
+default_end = -30 	# -29 - 1 
+print(s[28:-30:-1])
+print(s[:-4:-1])
+
+x = list('universe')
+print(x)
+print(x[2:4])
+print(x[2::2])
+print(x[4:50])
+
+lst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(lst[1:5:2] + lst[1:5:1])
+
+lst = [2, 4, 6, 8, 10, 12]
+print(lst[:-2] + lst[4:1])
+print(lst[:])
+
+lst = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+print(lst[::])	#bad
+print(lst[::1])	#bad
+print(lst[:])
+
+word = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(word[9:1:-1][::-1]) #****
 
