@@ -1,10 +1,10 @@
-def create_adder(x):
-    def add(y):
-        return x + y
+# def create_adder(x):
+#     def add(y):
+#         return x + y
     
-    return add
+#     return add
     
-add_ans = create_adder(15)
+# add_ans = create_adder(15)
 
-print(add_ans(10))
+# print(add_ans(10))
  
