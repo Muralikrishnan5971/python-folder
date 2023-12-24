@@ -1658,7 +1658,7 @@ artlist = [space, solar_system, earth1, earth2, virus, ameoba,lightening1,river,
 
 
 for art in artlist:
-	print(art)
+	print(art.center(50))
 	time.sleep(0.05)
 	os.system("clear")
 
