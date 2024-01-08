@@ -32,7 +32,8 @@ def is_vowel(l):
     vowels = "aeiou"
     return l.isalpha() and l.lower() in vowels
 
-print([ i + " is a consonant" for i in sentence.replace(" ", "") if not is_vowel(i) ]
+print([ i + " is a consonant" for i in sentence.replace(" ", "") if not
+       is_vowel(i) ])
 
 
 

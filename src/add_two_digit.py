@@ -1,7 +1,11 @@
 """
-Write a program that adds the digits in a 2 digit number. 
+Write a program that adds the digits in a 2 digit number.
 e.g. if the input was 35, then the output should be 3 + 5 = 8\
 """
+
+import os
+
+print(os.path)
 
 two_digit_num = input("Please enter a two digit number: ")
 # str_two_digit_num = str(two_digit_num)
